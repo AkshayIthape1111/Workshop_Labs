@@ -109,10 +109,28 @@ All files on a linux system are stored on file systems which are organized into 
    ```
 ### /usr - Secondary hierarchy
 ---
+1. /usr usually contains by far the largest share of data on a system. 
+2. Hence, this is one of the most important directories in the system as it contains all the user binaries, their documentation, libraries, header files, etc.... X and its supporting libraries can be found here. User programs like telnet, ftp, etc.... are also placed here.
+   ```
+   /usr/
+   ├── bin - Most user commands
+   ├── games - Games and educational binaries 
+   ├── include - Header files included by C programs
+   ├── lib - Libraries
+   ├── local - Local hierarchy (empty after main installation)
+   ├── sbin - Non-vital system binaries
+   ├── share - Architecture-independent data
+   └── src - Source code 
+   ```
+3. See **/usr** directory by using following commands
+   ```
+   cd /usr
+   ls -la
+   ``` 
 ### /var - Variable data 
 ---
-1. Variable files—files whose content is expected to continually change during normal operation of the system—such as logs, spool files, and temporary e-mail files. 
-2. This includes — system log files (/var/log); packages and database files (/var/lib); emails (/var/mail); print queues (/var/spool); lock files (/var/lock); temp files needed across reboots (/var/tmp);
+1. Variable files whose content is expected to continually change during normal operation of the system—such as logs, spool files, and temporary e-mail files. 
+2. This includes system log files (/var/log); packages and database files (/var/lib); emails (/var/mail); print queues (/var/spool); lock files (/var/lock); temp files needed across reboots (/var/tmp);
 3. See **/var** directory by using following commands
    ```
    cd /var
