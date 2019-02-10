@@ -68,14 +68,48 @@ All files on a linux system are stored on file systems which are organized into 
    ```
 ### /dev - Device files
 ---
+1. The /dev directory is the location of special or device files.
+2. These include terminal devices, usb, or any device attached to the system.
+3. See **/dev** directory by using following commands
+   ```
+   cd /dev
+   ls -la
+   ```
 ### /etc - Host-specific system configuration
 ---
+1. The /etc hierarchy contains configuration files. A "configuration file" is a local file used to control the operation of a program; it must be static and cannot be an executable binary.
+2. This also contains startup and shutdown shell scripts used to start/stop individual programs.
+3. It is recommended that files be stored in subdirectories of /etc rather than directly in /etc.
+4. See **/etc** directory by using following commands
+   ```
+   cd /etc
+   ls -la
+   ```
 ### /home - User home directories
 ---
+1. Home directories for all users to store their personal files.
+2. For example: /home/john, /home/nikita
+3. See **/home** directory by using following commands
+   ```
+   cd /home
+   ls -la
+   ```
 ### /lib - Essential shared libraries and kernel modules
 ---
+1. The /lib directory contains those shared library images needed to boot the system and run the commands in the root filesystem, ie. by binaries in /bin and /sbin.
+2. See **/lib** directory by using following commands
+   ```
+   cd /lib
+   ls -la
+   ```
 ### /lib64 - Alternate format essential shared libraries
 ---
+1. The /lib64 directory contains those shared library images needed to boot the system and run the commands in the root filesystem, ie. by binaries in /bin and /sbin.
+2. See **/lib64** directory by using following commands
+   ```
+   cd /lib64
+   ls -la
+   ```
 ### /lost+found - Recover files 
 ---
 1. Linux should always go through a proper shutdown. Sometimes your system might crash or a power failure might take the machine down. Either way, at the next boot, a lengthy filesystem check (the speed of this check is dependent on the type of filesystem that you actually use. ie. ext3 is faster than ext2 because it is a journalled filesystem) using fsck will be done. Fsck will go through the system and try to recover any corrupt files that it finds. The result of this recovery operation will be placed in this directory. The files recovered are not likely to be complete or make much sense but there always is a chance that something worthwhile is recovered. Each partition has its own lost+found directory. If you find files in there, try to move them back to their original location. If you find something like a broken symbolic link to 'file', you have to reinstall the file/s from the corresponding RPM, since your file system got damaged so badly that the files were mutilated beyond recognition. Below is an example of a /lost+found directory. As you can see, the vast majority of files contained here are in actual fact sockets. As for the rest of the other files they were found to be damaged system files and personal files. These files were not able to be recovered. 
