@@ -48,7 +48,7 @@ All files on a linux system are stored on file systems which are organized into 
    cd /bin
    ls -la
    ```
-### /boot - Booting Files
+### /boot - Static files of the boot loader
 ---
 1. This directory contains the files which should needed to boot the system.
 2. All booting related files are stored in this directory only.
@@ -60,51 +60,68 @@ All files on a linux system are stored on file systems which are organized into 
    ``` 
 ### /cdrom - Historical Mount Point for CD-ROMs
 ---
-1. The /cdrom directory isn’t part of the FHS standard, but you’ll still find it on Ubuntu and other operating systems. It’s a temporary location for CD-ROMs inserted in the system. However, the standard location for temporary media is inside the /media directory.
+1. This directory isn’t part of the FHS standard, but you’ll still find it on Ubuntu and other operating systems. It’s a temporary location for CD-ROMs inserted in the system. However, the standard location for temporary media is inside the /media directory.
 2. See **/cdrom** directory by using following commands
    ```
    cd /cdrom
    ls -la
    ```
-### /dev
+### /dev - Device files
 ---
-### /etc
+### /etc - Host-specific system configuration
 ---
-### /home
+### /home - User home directories
 ---
-### /lib
+### /lib - Essential shared libraries and kernel modules
 ---
-### /lib64
+### /lib64 - Alternate format essential shared libraries
 ---
-### /lost+found
+### /lost+found - 
 ---
-### /media
+### /media - Mount point for removable media
 ---
-### /mnt
+### /mnt - Mount point for mounting a filesystem temporarily
 ---
-### /opt
+### /opt - Add-on application software packages
 ---
-### /proc
+### /proc - Kernel and process information virtual filesystem 
 ---
-### /root
+### /root - Home directory for the root user
 ---
-### /run
+### /run - Data relevant to running processes
 ---
-### /sbin
+### /sbin - Essential system binaries
 ---
-### /snap
+### /snap - 
 ---
-### /srv
+### /srv - Data for services provided by this system
 ---
-### /sys
+### /sys - Kernel and system information virtual filesystem
 ---
-### /tmp
+### /tmp - Temporary files
 ---
-### /usr
+1. Directory that contains temporary files created by system and users.
+2. Files under this directory are deleted when system is rebooted.
+3. See **/tmp** directory by using following commands
+   ```
+   cd /tmp
+   ls -la
+   ```
+### /usr - Secondary hierarchy
 ---
-### /var
+### /var - Variable data 
 ---
-### /vmlinz
+1. Variable files—files whose content is expected to continually change during normal operation of the system—such as logs, spool files, and temporary e-mail files. 
+2. This includes — system log files (/var/log); packages and database files (/var/lib); emails (/var/mail); print queues (/var/spool); lock files (/var/lock); temp files needed across reboots (/var/tmp);
+3. See **/var** directory by using following commands
+   ```
+   cd /var
+   ls -la
+   ```
+### /vmlinuz
 ---
+1. Normally the kernel or symbolic link to the kernel.
 ### /initrd.img
 ---
+1. initrd provides the capability to load a RAM disk by the bootloader.
+2. initrd is mainly designed to allow system startup to occur in two phases, where the kernel comes up with a minimum set of compiled−in drivers, and where additional modules are loaded from initrd.
