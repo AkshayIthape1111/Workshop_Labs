@@ -27,3 +27,27 @@ All files on a linux system are stored on file systems which are organized into 
 ├── var
 └── vmlinuz -> boot/vmlinuz-4.4.0-31-generic
 ```
+### bin
+### boot
+### cdrom
+### dev
+### etc
+### home
+### lib
+### lib64
+### lost+found
+### media
+### mnt
+### opt
+### proc
+### root
+### run
+### sbin
+### snap
+### srv
+### sys
+### tmo
+### usr
+### var
+### vmlinz
+### initrd.img
