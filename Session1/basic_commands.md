@@ -24,6 +24,13 @@ Example :-
    ```
    cd kernel 
    ```
+Some more examples for cd command
+   ```
+   cd ..       //It change current directory to parent directory 
+   cd .        //The current directory it is represented by a single dot (".")
+   cd or cd ~  //It change to home directory  
+   
+   ```
 ### ls command
 ---
 ### vi/nano command
