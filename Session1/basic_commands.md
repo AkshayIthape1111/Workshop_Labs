@@ -40,6 +40,7 @@ Some Task for you
 ls - list directory contents and ls command is one of the most frequently used command in Linux. I believe ls command is the first command you may use when you get into the command prompt of Linux Box. 
 <br/>
 Some examples
+```
 1. **ls** - ls with no option list files and directories in bare format where we won’t be able to view details like file types, size, modified date and time, permission and links etc.
 2. **ls -l** - Shows file or directory, size, modified date and time, file or folder name and owner of file and it’s permission.
 3. **ls -a** - List all files including hidden file starting with ‘.‘
@@ -57,6 +58,7 @@ Some examples
 15. **ls -s** - print the allocated size of each file, in blocks
 16. **ls -t** - sort by modification time, newest first
 17. **ls -1** - list one file per line.
+```
 ### vi/nano command
 ---
 ### cat command
