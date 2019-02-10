@@ -6,6 +6,7 @@ echo "hello"
 echo $SHELL
 ```
 When the shell is used interactively,it displays a string when it is waiting for a command from the user.This is called **shell prompt**.<br/>
+---
 When the regular user starts a shell,the default prompt ends with a **$** character.
 ```
 akshay-devops@1mp3r1sh4bl3:~$
@@ -23,6 +24,7 @@ akshay-devops@1mp3r1sh4bl3:~$
   pwd
   ```
 * **$** is for regular user<br/>
+---
 ```
 su -
 ```
@@ -43,4 +45,4 @@ root@1mp3r1sh4bl3:~#
   pwd
   ```
 * **#** is for superuser user <br/>
-
+---
