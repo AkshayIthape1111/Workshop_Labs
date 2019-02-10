@@ -36,57 +36,69 @@ All files on a linux system are stored on file systems which are organized into 
    cd /
    ls -la
    ```
-### bin - Essential User Binaries
+### /bin - Essential User Binaries
 ---
 1. Contains binary executables files only.
 2. There is no sub-directory in bin.
 3. Common linux commands you need to use in single-user modes are located under this directory.
 4. Commands used by all the regular users of the system are located here.
 5. For example: bash,cat,echo,cp,mv,hostname,whoami and there are some many .
-### boot
+6. See **/bin** directory by using following commands
+   ```
+   cd /bin
+   ls -la
+   ```
+### /boot
 ---
-
-### cdrom
+1. This directory contains the files which should needed to boot the system.
+2. All booting related files are stored in this directory only.
+3. Such as Kernel initrd (Initial RAM Disk image), vmlinuz (Virtual Memory LINUx gZip – compressed Linux kernel Executable) & grub (Grand Unified Bootloader). 
+4. See **/boot** directory by using following commands
+   ```
+   cd /boot
+   ls -la
+   ``` 
+### /cdrom
 ---
-### dev
+### /dev
 ---
-### etc
+### /etc
 ---
-### home
+### /home
 ---
-### lib
+### /lib
 ---
-### lib64
+### /lib64
 ---
-### lost+found
+### /lost+found
 ---
-### media
+### /media
 ---
-### mnt
+### /mnt
 ---
-### opt
+### /opt
 ---
-### proc
+### /proc
 ---
-### root
+### /root
 ---
-### run
+### /run
 ---
-### sbin
+### /sbin
 ---
-### snap
+### /snap
 ---
-### srv
+### /srv
 ---
-### sys
+### /sys
 ---
-### tmp
+### /tmp
 ---
-### usr
+### /usr
 ---
-### var
+### /var
 ---
-### vmlinz
+### /vmlinz
 ---
-### initrd.img
+### /initrd.img
 ---
