@@ -31,6 +31,11 @@ All files on a linux system are stored on file systems which are organized into 
 ---
 1. Everything on your Linux system is located under the / directory, known as the **root directory**.
 2. Only root user has write privilege under this directory. 
+3. See **/** directory by using following commands   
+   ```
+   cd /
+   ls -la
+   ```
 ### bin
 ---
 ### boot
