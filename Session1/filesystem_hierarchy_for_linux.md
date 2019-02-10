@@ -27,30 +27,55 @@ All files on a linux system are stored on file systems which are organized into 
 ├── var
 └── vmlinuz -> boot/vmlinuz-4.4.0-31-generic
 ```
-### /
+### **/**
+---
 1. Everything on your Linux system is located under the / directory, known as the **root directory**.
 2. Only root user has write privilege under this directory. 
 ### bin
+---
 ### boot
+---
 ### cdrom
+---
 ### dev
+---
 ### etc
+---
 ### home
+---
 ### lib
+---
 ### lib64
+---
 ### lost+found
+---
 ### media
+---
 ### mnt
+---
 ### opt
+---
 ### proc
+---
 ### root
+---
 ### run
+---
 ### sbin
+---
 ### snap
+---
 ### srv
+---
 ### sys
-### tmo
+---
+### tmp
+---
 ### usr
+---
 ### var
+---
 ### vmlinz
+---
 ### initrd.img
+---
