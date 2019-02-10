@@ -48,7 +48,7 @@ All files on a linux system are stored on file systems which are organized into 
    cd /bin
    ls -la
    ```
-### /boot
+### /boot - Booting Files
 ---
 1. This directory contains the files which should needed to boot the system.
 2. All booting related files are stored in this directory only.
@@ -58,8 +58,14 @@ All files on a linux system are stored on file systems which are organized into 
    cd /boot
    ls -la
    ``` 
-### /cdrom
+### /cdrom - Historical Mount Point for CD-ROMs
 ---
+1. The /cdrom directory isn’t part of the FHS standard, but you’ll still find it on Ubuntu and other operating systems. It’s a temporary location for CD-ROMs inserted in the system. However, the standard location for temporary media is inside the /media directory.
+2. See **/cdrom** directory by using following commands
+   ```
+   cd /cdrom
+   ls -la
+   ```
 ### /dev
 ---
 ### /etc
