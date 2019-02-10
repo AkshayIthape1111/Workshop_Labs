@@ -123,14 +123,40 @@ All files on a linux system are stored on file systems which are organized into 
    ```
 ### /run - Data relevant to running processes
 ---
+1. This directory contains system information data describing the system since it was booted. Files under this directory must be cleared (removed or truncated as appropriate) at the beginning of the boot process.
+2. The purposes of this directory were once served by /var/run. In general, programs may continue to use /var/run to fulfill the requirements set out for /run for the purposes of backwards compatibility. Programs which have migrated to use /run should cease their usage of /var/run, except as noted in the section on /var/run.
+3. See **/run** directory by using following commands
+   ```
+   cd /run
+   ls 
+   ```
 ### /sbin - Essential system binaries
 ---
+1. Utilities used for system administration (and other root-only commands) are stored in /sbin, /usr/sbin, and /usr/local/sbin. 
+2. /sbin contains binaries essential for booting, restoring, recovering, and/or repairing the system in addition to the binaries in /bin. 
+3. Programs executed after /usr is known to be mounted (when there are no problems) are generally placed into /usr/sbin. Locally-installed system administration programs should be placed into /usr/local/sbin.
+4. There must be no subdirectories in /sbin.
+5. See **/sbin** directory by using following commands
+   ```
+   cd /sbin
+   ls -la
+   ```
 ### /srv - Data for services provided by this system
 ---
+1. /srv contains site-specific data which is served by this system.
+2. See **/srv** directory by using following commands
+   ```
+   cd /srv
+   ls -la
+   ```
 ### /sys - Kernel and system information virtual filesystem
 ---
 1. The sys filesystem is the location where information about devices, drivers, and some kernel features is exposed.
-
+2. See **/sys** directory by using following commands
+   ```
+   cd /sys
+   ls -la
+   ```
 ### /tmp - Temporary files
 ---
 1. Directory that contains temporary files created by system and users.
