@@ -27,7 +27,7 @@ All files on a linux system are stored on file systems which are organized into 
 ├── var
 └── vmlinuz -> boot/vmlinuz-4.4.0-31-generic
 ```
-### **/**
+### / - The Root Directory
 ---
 1. Everything on your Linux system is located under the / directory, known as the **root directory**.
 2. Only root user has write privilege under this directory. 
@@ -36,10 +36,16 @@ All files on a linux system are stored on file systems which are organized into 
    cd /
    ls -la
    ```
-### bin
+### bin - Essential User Binaries
 ---
+1. Contains binary executables files only.
+2. There is no sub-directory in bin.
+3. Common linux commands you need to use in single-user modes are located under this directory.
+4. Commands used by all the regular users of the system are located here.
+5. For example: bash,cat,echo,cp,mv,hostname,whoami and there are some many .
 ### boot
 ---
+
 ### cdrom
 ---
 ### dev
