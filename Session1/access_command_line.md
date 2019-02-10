@@ -45,3 +45,14 @@ root@1mp3r1sh4bl3:~#
   ```
 * **#** is for superuser user <br/>
 ---
+### Shell Basics
+Commands entered at shell prompt have three basic parts
+* **Command to run**
+* **Options to adjust the behavior of the command**
+* **Arguments, which are typically targets of the command**
+Examples
+```
+echo -e "hello \nhiiii \nhow are you" > akki
+cat akki
+cat -n akki
+```
