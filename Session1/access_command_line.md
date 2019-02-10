@@ -22,7 +22,7 @@ akshay-devops@1mp3r1sh4bl3:~$
   ```
   pwd
   ```
-* **$** is for regular user <br/>
+* **$** is for regular user
 When the **superuser(root)** user starts a shell,the default prompt ends with a **#** character.
 ```
 root@1mp3r1sh4bl3:~#
