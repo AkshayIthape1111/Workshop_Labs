@@ -76,28 +76,61 @@ All files on a linux system are stored on file systems which are organized into 
 ---
 ### /lib64 - Alternate format essential shared libraries
 ---
-### /lost+found - 
+### /lost+found - Recover files 
 ---
+1. Linux should always go through a proper shutdown. Sometimes your system might crash or a power failure might take the machine down. Either way, at the next boot, a lengthy filesystem check (the speed of this check is dependent on the type of filesystem that you actually use. ie. ext3 is faster than ext2 because it is a journalled filesystem) using fsck will be done. Fsck will go through the system and try to recover any corrupt files that it finds. The result of this recovery operation will be placed in this directory. The files recovered are not likely to be complete or make much sense but there always is a chance that something worthwhile is recovered. Each partition has its own lost+found directory. If you find files in there, try to move them back to their original location. If you find something like a broken symbolic link to 'file', you have to reinstall the file/s from the corresponding RPM, since your file system got damaged so badly that the files were mutilated beyond recognition. Below is an example of a /lost+found directory. As you can see, the vast majority of files contained here are in actual fact sockets. As for the rest of the other files they were found to be damaged system files and personal files. These files were not able to be recovered. 
 ### /media - Mount point for removable media
 ---
+1. This directory contains subdirectories which are used as mount points for removable media such as floppydisks, USB,  cdroms and zip disks.
+2. See **/media** directory by using following commands
+   ```
+   cd /media
+   ls -la
+   ```
 ### /mnt - Mount point for mounting a filesystem temporarily
 ---
+1. Temporary mount directory where sysadmins can mount filesystems.
+2. See **/mnt** directory by using following commands
+   ```
+   cd /mnt
+   ls -la
+   ```
 ### /opt - Add-on application software packages
 ---
+1. /opt is reserved for the installation of add-on application software packages.
+2. See **/opt** directory by using following commands
+   ```
+   cd /opt
+   ls -la
+   ```
 ### /proc - Kernel and process information virtual filesystem 
 ---
+1. Contains information about system process.
+2. This is a pseudo filesystem contains information about running process. For example: /proc/{pid} directory contains information about the process with that particular pid.
+3. This is a virtual filesystem with text information about system resources. For example: /proc/uptime
+4. See **/proc** directory by using following commands
+   ```
+   cd /proc
+   ls -la
+   ```
 ### /root - Home directory for the root user
 ---
+1. Home directory for the root user so only root can access this directory. 
+2. See **/root** directory by using following commands
+   ```
+   cd /root
+   ls -la
+   ```
 ### /run - Data relevant to running processes
 ---
 ### /sbin - Essential system binaries
----
-### /snap - 
 ---
 ### /srv - Data for services provided by this system
 ---
 ### /sys - Kernel and system information virtual filesystem
 ---
+1. The sys filesystem is the location where information about devices, drivers, and some kernel features is exposed.
+
 ### /tmp - Temporary files
 ---
 1. Directory that contains temporary files created by system and users.
