@@ -234,6 +234,15 @@ Some Examples:-
 ---
 ### mkdir command
 ---
+Short for "make directory", mkdir is used to create directories on a file system .<br/>
+ext4_mkdir() system call attempts to create a directory named pathname.<br/>
+On older kernels where mkdirat() is unavailable, the glibc wrapper function falls back to the use of mkdir().  When  pathname  is  a relative pathname, glibc constructs a pathname based on the symbolic link in /proc/self/fd that corresponds to the dirfd argument.<br/>
+Some Examples :- 
+1. **mkdir akki** - It create akki directory in your current directory .
+2. **mkdir -vp**
+   * -p no error if existing, make parent directories as needed 
+   * -v print a message for each created directory
+3. **mkdir -m a=rwx akki OR mkdir -m 777 akki** - Create the akki directory, and set its permissions such that all users may read, write, and execute the contents
 ---
 ### cp command
 ---
@@ -246,6 +255,10 @@ Some Examples:-
 ---
 ### rmdir command
 ---
+Short for "remove directory", rmdir is used to remove directories on a file system .<br/>
+ext4_rmdir() system call attempts to remove a directory using pathname.
+1. **rmdir akki** - It remove akki directory into your current directory if it is empty .
+2. **rmdir -vp** - Remove DIRECTORY and its ancestors; e.g., 'rmdir -p a/b/c' is similar to 'rmdir a/b/c a/b a'
 ---
 ### file command
 ---
