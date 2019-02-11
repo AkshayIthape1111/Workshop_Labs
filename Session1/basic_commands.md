@@ -342,4 +342,5 @@ Some Examples:-
 ---
 ### 16. touch command
 ---
+The touch command is the easiest way to create new, empty files. In Linux every single file is associated with timestamps, and every file stores the information of last access time, last modification time and last change time. So, whenever we create new file, access or modify an existing file, the timestamps of that file automatically updated.
 ---
