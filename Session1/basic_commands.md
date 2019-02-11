@@ -66,8 +66,7 @@ Lets start with some general information and then move on to some good things wh
 3. Vi is the most popular editor and next most popular editor is gedit.
 4. Do you know there is a book on VI editor from orally which is of 600+ pages.
 5. Some other editors which will do the work of editing files are neno, pico, gedit, emacs, joe, nedit, ed etc.
-<br/>
-Learning vi editor and remembering them is a very a easy task if you learn it in a systematic way. <br/>
+<br/>Learning vi editor and remembering them is a very a easy task if you learn it in a systematic way. <br/>
 * Modes of VI
 * Navigational commands
 * Editing commands.
