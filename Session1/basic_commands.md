@@ -340,3 +340,9 @@ Some Examples:-
 7. **history -w** - Write To History File 
 8. **history -c** - Clear History File
 ---
+### 16. touch command
+---
+The touch command is the easiest way to create new, empty files. In Linux every single file is associated with timestamps, and every file stores the information of last access time, last modification time and last change time. So, whenever we create new file, access or modify an existing file, the timestamps of that file automatically updated.<br/>
+Some Example
+1.
+---
