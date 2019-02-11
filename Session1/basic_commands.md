@@ -263,9 +263,46 @@ ext4_rmdir() system call attempts to remove a directory using pathname.
 ### file command
 ---
 ---
-### head/tail command
+### head command
 ---
+The head command reads the first few lines of any text given to it as an input and writes them to standard output (which, by default, is the display screen). <br/>
+head, by default, prints the first 10 lines of each FILE to standard output. <br/>
+Some Examples :- 
+1. **head myfile.txt** - Display the first ten lines of myfile.txt.
+2. **head -15 myfile.txt** - Display the first fifteen lines of myfile.txt.
+3. **head myfile.txt myfile2.txt** - Display the first ten lines of both myfile.txt and myfile2.txt, with a header before each that indicates the file name.
+4. **head -n 5 myfile.txt myfile2.txt** - Displays only the first 5 lines of both files.
+5. **head -c 20 myfile.txt** - Displays the first 20 bytes of myfile.txt
+6. **head -n 5K myfile.txt** - Displays the first 5,000 lines of myfile.txt.
+7. **head -c 6M myfile.txt** - Displays the first six megabytes.
+8. **head -** - If a dash is specified for the file name, head reads from standard input rather than a regular file.
+9. **head -n 4 *.txt** - Display the first four lines of every file in the working directory whose file name ends in the extension .txt.
+10. **head -n 4 -q *.txt** - Same as the previous command, but uses quiet (-q) output, which will not print a header before the lines of each file.
+---
+### tail command
+The tail command reads the final few lines of any text given to it as an input and writes them to standard output (which, by default, is the monitor screen). <br/>
+tail prints the last 10 lines of each FILE to standard <br/>
+Some Examples :- 
+1. **tail myfile.txt** - Outputs the last 10 lines of the file myfile.txt.
+2. **tail -15 myfile.txt** - Display the last fifteen lines of myfile.txt.
+3. **tail -f myfile.txt** - Outputs the last 10 lines of myfile.txt, and monitors myfile.txt for updates; tail then continues to output any new lines that are added to myfile.txt.
+4. **tail -n 5 myfile.txt myfile2.txt** - Displays only the last 5 lines of both files.
+5. **tail -c 20 myfile.txt** - Displays the last 20 bytes of the myfile.txt
+6. **tail -n 5K myfile.txt** - Displays the last 5,000 lines of myfile.txt.
+7. **tail -c 6M myfile.txt** - Displays the last six megabytes.
+8. **tail -n 4 *.txt** - Display the last four lines of every file in the working directory whose file name ends in the extension .txt.
 ---
 ### history command
 ---
+We use history command frequently in our daily routine jobs to check history of command or to get info about command executed by user. <br/>
+we will see how we can use history command effectively to extract the command which was executed by users in Bash shell. This may be useful for audit purpose or to find out what command is executed at what date and time. <br/>
+Some Examples:-
+1. **history** -  List Last/All Executed Commands in Linux
+2. **history 3** - Print ‘n’ Lines
+3. **!!** - Repeat Most Recent Command
+4. **!101** - Repeat Specific Command 
+5. **!systemctl** - Repeat Command Starting With A String
+6. **history | grep httpd** - Piping History
+7. **history -w** - Write To History File 
+8. **history -c** - Clear History File
 ---
