@@ -8,6 +8,7 @@ Print name of current/working directory . The getcwd() function copies an absolu
 ```
 pwd
 ```
+---
 ### cd command
 ---
 cd command is use for change current directory to other directory using absolute path or relative path .<br/>
@@ -35,6 +36,7 @@ Some Task for you
 1. Change your working directory to root directory
 2. Go to the log directory which is under var directory using relative path
 3. Go to your home directory 
+---
 ### ls command
 ---
 ls - list directory contents and ls command is one of the most frequently used command in Linux. I believe ls command is the first command you may use when you get into the command prompt of Linux Box. 
@@ -57,6 +59,7 @@ Some examples
 15. **ls -s** - print the allocated size of each file, in blocks
 16. **ls -t** - sort by modification time, newest first
 17. **ls -1** - list one file per line.
+---
 ### vi command
 ---
 VI editor is the default file editor in most of the Linux/Nix machines. It is having great capabilities to edit a file with in few key strokes.<br/>
@@ -66,7 +69,7 @@ Lets start with some general information and then move on to some good things wh
 3. Vi is the most popular editor and next most popular editor is gedit.
 4. Do you know there is a book on VI editor from orally which is of 600+ pages.
 5. Some other editors which will do the work of editing files are neno, pico, gedit, emacs, joe, nedit, ed etc.
-<br/>Learning vi editor and remembering them is a very a easy task if you learn it in a systematic way. <br/>
+<br/>Learning vi editor and remembering them is a very a easy task if you learn it in a systematic way.
 * Modes of VI
 * Navigational commands
 * Editing commands.
@@ -196,6 +199,7 @@ change default separator
 :q! => force quit without save
 :wq => save and quit forcefully
 ```
+---
 ### cat command
 ---
 ### stat command
