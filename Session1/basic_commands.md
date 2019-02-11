@@ -342,5 +342,16 @@ Some Examples:-
 ---
 ### 16. touch command
 ---
-The touch command is the easiest way to create new, empty files. In Linux every single file is associated with timestamps, and every file stores the information of last access time, last modification time and last change time. So, whenever we create new file, access or modify an existing file, the timestamps of that file automatically updated.
+**The touch command is the easiest way to create new, empty files. In Linux every single file is associated with timestamps, and every file stores the information of last access time, last modification time and last change time. So, whenever we create new file, access or modify an existing file, the timestamps of that file automatically updated.
+<br/>
+Some Examples:-
+1. **touch akki123** - creates an empty (zero byte) new file called akki123
+2. **touch akki1 akki2 akki3** - By using touch command, you can also create more than one single file. It create 3 files akki1 , akki2 , akki3 .
+3. **touch {1..20}** - Create 20 Files at a time from 1 to 20.
+4. **touch -a akki123** - To change or update the last access and modification times of a file called akki123
+5. **touch -c akki** - Using -c option with touch command avoids creating new files.
+6. **touch -m akki** - If you like to change the only modification time of a file called akki
+7. **touch -c -t 12101730 akki** - You can explicitly set the time using -c and -t option with touch command.(YYDDHHMM)
+8. **touch -r akki akki1** - touch command with -r option, will update the time-stamp of file akki1 with the time-stamp of akki file. So, both the file holds the same time stamp.
+9. **touch -t 201212101830.55 akki** - If you would like to create a file with specified time other than the current time (YYMMDDHHMM.SS)
 ---
