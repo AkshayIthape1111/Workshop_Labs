@@ -2,7 +2,7 @@
 There are a countless number of commands in Linux. We are bound to use a number of them on a daily routine or numerous times to perform common tasks than others. It is important to note that certain commands are “distro-based” – they can only be found in specific distros. While others are generic Unix/Linux commands that you’ll find in all if not most mainstream distros.
 <br/>
 Now we'll discus about some basic linux commands with examples, you're almost always going to need those commands, so better to remember them. 
-### pwd command
+### 1. pwd command
 ---
 Print name of current/working directory . The getcwd() function copies an absolute pathname of the current working directory to the array pointed to by buf .
 ```
