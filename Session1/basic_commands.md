@@ -259,9 +259,29 @@ Some Examples :-
 ---
 ### mv command
 ---
+mv command is used to move files and directories.<br/>
+Some Examples:-
+1. **mv main.c def.h /home/usr/rapid/** - Move main.c def.h files to /home/usr/rapid/ directory
+2. **mv \*.c bak** - Move all C files in current directory to subdirectory bak 
+3. **mv bak/\* .** - Move all files in subdirectory bak to current directory 
+4. **mv main.c main.bak** - Rename file main.c to main.bak
+5. **mv bak bak2** - Rename directory bak to bak2
+6. **mv -u main.c bak** - Update - move when main.c is newer
+7. **mv -v main.c bak** - Move main.c and prompt before overwrite bak/main.c
 ---
 ### rm command
 ---
+rm stands for ‘remove‘ as the name suggests rm command is used to delete or remove files and directory in UNIX like operating system. If you are new to Linux then you should be very careful while running rm command because once you delete the files then you can not recover the contents of files and directory. Though there are some tools and commands through which deleted files can be recovered but for that you need expert skills.<br/>
+Some Examples:-
+1. **rm linux.log** - Remove or delete a file.
+2. **rm -i linuxstufff.log** - Delete the files interactively.
+3. **rm -d appdata/** - Delete a empty directory
+4. **rm -r dbstore/** - Deleting a directory recursively using ‘-r’ option
+5. **rm -ri dbstore/** - Delete the files and sub-directories interactively.
+6. **rm -f tech.txt** - Deleting files forcefully using ‘-f’ option
+7. **rm -I linux_store/app\*** - Prompt once before deleting more than three files or recursive delete.
+8. **rm -f log{1..5}.txt** - Regular expression in rm command .
+9. **rm ./\ -store** - Delete a file which starts with hyphen symbol (-)
 ---
 ### rmdir command
 ---
