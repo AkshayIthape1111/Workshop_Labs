@@ -219,6 +219,18 @@ Some Examples:-
 ---
 ### stat command
 ---
+stat command is a useful utility for viewing file or file system status. It retrieves information such as file type; access rights in octal and human-readable; SELinux security context string; time of file birth, last access, last data modification, last status change in both human-readable and in seconds since Epoch, and much more.<br/>
+It has an option to specify a custom format instead of the default, for displaying information.<br/>
+Some Examples:-
+1. **stat /var/log/syslog** - This command will display the size, blocks, IO blocks, file type, inode value, number of links and much more information about the file /var/log/syslog
+2. **stat -f /var/log/syslog** - stat command treated the input file as a normal file, however, to display file system status instead of file status, use the **-f** option.
+3. **stat -L /** - Since Linux supports links (symbolic and hard links), certain files may have one or more links, or they could even exist in a filesystem.To enable stat to follow links, use the -L flag
+4. **stat --printf='%U\n%G\n%C\n%z\n' /var/log/secure** - Use a Custom Format To Display Information
+   * %U – user name of owner
+   * %G – group name of owner
+   * %C – SELinux security context string
+   * %z – time of last status change, human-readable
+5. **stat -t /var/log/syslog** - The **-t** option can be used to print the information in terse form.
 ---
 ### mkdir command
 ---
