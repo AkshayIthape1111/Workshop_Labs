@@ -65,7 +65,7 @@ Lets start with some general information and then move on to some good things wh
 2. Vi have it’s variants like vim which stands for Vi IMproved, VimX11 for gui and winvi for MS windows.
 3. Vi is the most popular editor and next most popular editor is gedit.
 4. Do you know there is a book on VI editor from orally which is of 600+ pages.
-5. Some other editors which will do the work of editing files are neno, pico, gedit, emacs, joe, nedit, ed etc.
+5. Some other editors which will do the work of editing files are neno, pico, gedit, emacs, joe, nedit, ed etc.<br/>
 Learning vi editor and remembering them is a very a easy task if you learn it in a systematic way.
 * Modes of VI
 * Navigational commands
@@ -75,11 +75,11 @@ Learning vi editor and remembering them is a very a easy task if you learn it in
 #### Modes of VI :-
 Vi have two mode of operation.
 1. Command mode
-2. Inserting mode
+2. Inserting mode<br/>
 Command mode : <br/>
 Vi editor begins in command mode, where cursor movement(navigation in the file) and editing occur. To enter in to command mode from Inserting mode press esc button.<br/>
 Inserting mode : <br/>
-Used for entering text, this is similar to notepad in Windows. To enter in to inserting mode you can use any of the following.<br/>
+Used for entering text, this is similar to notepad in Windows. To enter in to inserting mode you can use any of the following.
 ```
 i or I => present line
 o => one line down the present line
@@ -93,9 +93,7 @@ h => To move one character left.
 j => To move one line down.
 k => To move one line up.
 l => To move one character right.
-```
 How to use above commands in clever way?
-```
 Examples :
 6j => to move 6 lines down from the present courser.
 7k => to move 7 lines above from the present courser.
@@ -105,9 +103,7 @@ Examples :
 w => word forward.
 e =>word forward, but end of the word.
 b => one word backward.
-```
 Examples :
-```
 32w => To move 32 words forward
 6b => To move 6 words back.
 ```
