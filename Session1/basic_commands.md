@@ -203,21 +203,44 @@ change default separator
 ---
 ### cat command
 ---
+The cat command is one of the most frequently used command in Linux/Unix like operating systems. cat command allows us to create single or multiple files, view contain of file, concatenate files and redirect output in terminal or files.
+<br/>
+Some Examples:-
+1. **cat a.txt** - It print a.txt file on terminal .
+2. **cat a.txt b.txt** - It print 1st a.txt file after that he print b.txt file on CLI
+3. **cat >  king.txt** - Awaits input from user, type desired text and press CTRL+D (hold down Ctrl Key and type ‘d‘) to exit. The text will be written in king file
+4. **cat tp1.txt | more OR cat tp2.txt | less** - If file having large number of content that won’t fit in output terminal and screen scrolls up very fast, we can use parameters more and less with cat command as show above.
+5. **cat -n tp1.txt** - With -n option you could see the line numbers of a file tp1.txt in the output terminal.
+6. **cat -e test.txt** - you can see with -e option that ‘$‘ is shows at the end of line and also in space showing ‘$‘ if there is any gap between paragraphs. This options is useful to squeeze multiple lines in a single line.
+7. **cat -T test.txt** - we could see TAB space is filled up with ‘^I‘ character.
+8. **cat test > test1** - We can redirect standard output of a file into a new file else existing file with ‘>‘ (greater than) symbol. Careful, existing contents of test1 will be overwritten by contents of test file.
+9. **cat test >> test1** - Appends in existing file with ‘>>‘ (double greater than) symbol. Here, contents of test file will be appended at the end of test1 file.
+10. **cat < test2** - When you use the redirect with standard input ‘<‘ (less than symbol), it use file name test2 as a input for a command and output will be shown in a terminal.
+---
 ### stat command
+---
 ---
 ### mkdir command
 ---
+---
 ### cp command
+---
 ---
 ### mv command
 ---
+---
 ### rm command
+---
 ---
 ### rmdir command
 ---
+---
 ### file command
+---
 ---
 ### head/tail command
 ---
+---
 ### history command
+---
 ---
