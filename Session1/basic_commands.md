@@ -65,7 +65,8 @@ Lets start with some general information and then move on to some good things wh
 2. Vi have it’s variants like vim which stands for Vi IMproved, VimX11 for gui and winvi for MS windows.
 3. Vi is the most popular editor and next most popular editor is gedit.
 4. Do you know there is a book on VI editor from orally which is of 600+ pages.
-5. Some other editors which will do the work of editing files are neno, pico, gedit, emacs, joe, nedit, ed etc.<br/>
+5. Some other editors which will do the work of editing files are neno, pico, gedit, emacs, joe, nedit, ed etc.
+<br/>
 Learning vi editor and remembering them is a very a easy task if you learn it in a systematic way.
 * Modes of VI
 * Navigational commands
@@ -74,11 +75,9 @@ Learning vi editor and remembering them is a very a easy task if you learn it in
 * Save and quiting a file.
 #### Modes of VI :-
 Vi have two mode of operation.
-1. Command mode
-2. Inserting mode<br/>
-Command mode : <br/>
+1. Command mode : <br/>
 Vi editor begins in command mode, where cursor movement(navigation in the file) and editing occur. To enter in to command mode from Inserting mode press esc button.<br/>
-Inserting mode : <br/>
+2. Inserting mode : <br/>
 Used for entering text, this is similar to notepad in Windows. To enter in to inserting mode you can use any of the following.
 ```
 i or I => present line
