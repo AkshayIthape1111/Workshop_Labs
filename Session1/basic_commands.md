@@ -262,6 +262,10 @@ ext4_rmdir() system call attempts to remove a directory using pathname.
 ---
 ### file command
 ---
+The file command determines the file type of a file. It reports the file type in human readable format (e.g. ‘ASCII text’) or MIME type (e.g. ‘text/plain; charset=us-ascii’). As filenames in UNIX can be entirely independent of file type file can be a useful command to determine how to view or work with a file.<br/>
+Some Examples:-
+1. **file akki.txt** - To determine the file type of a file pass the name of a file to the file command.The file name along with the file type will be printed to standard output.
+2. **file -b akki.txt** - To show just the file type pass the -b option. 
 ---
 ### head command
 ---
