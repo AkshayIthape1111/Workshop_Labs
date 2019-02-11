@@ -276,8 +276,8 @@ Some Examples :-
 6. **head -n 5K myfile.txt** - Displays the first 5,000 lines of myfile.txt.
 7. **head -c 6M myfile.txt** - Displays the first six megabytes.
 8. **head -** - If a dash is specified for the file name, head reads from standard input rather than a regular file.
-9. **head -n 4 *.txt** - Display the first four lines of every file in the working directory whose file name ends in the extension .txt.
-10. **head -n 4 -q *.txt** - Same as the previous command, but uses quiet (-q) output, which will not print a header before the lines of each file.
+9. **head -n 4 \*.txt** - Display the first four lines of every file in the working directory whose file name ends in the extension .txt.
+10. **head -n 4 -q \*.txt** - Same as the previous command, but uses quiet (-q) output, which will not print a header before the lines of each file.
 ---
 ### tail command
 The tail command reads the final few lines of any text given to it as an input and writes them to standard output (which, by default, is the monitor screen). <br/>
@@ -290,7 +290,7 @@ Some Examples :-
 5. **tail -c 20 myfile.txt** - Displays the last 20 bytes of the myfile.txt
 6. **tail -n 5K myfile.txt** - Displays the last 5,000 lines of myfile.txt.
 7. **tail -c 6M myfile.txt** - Displays the last six megabytes.
-8. **tail -n 4 *.txt** - Display the last four lines of every file in the working directory whose file name ends in the extension .txt.
+8. **tail -n 4 \*.txt** - Display the last four lines of every file in the working directory whose file name ends in the extension .txt.
 ---
 ### history command
 ---
