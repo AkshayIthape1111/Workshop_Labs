@@ -246,6 +246,16 @@ Some Examples :-
 ---
 ### cp command
 ---
+cp  command is used for copy files and directories <br/>
+Some Examples :- 
+1. **cp main.c bak** - Copy single file main.c to destination directory bak
+2. **cp main.c def.h /home/usr/rapid/** - Copy 2 files main.c and def.h to destination absolute path directory /home/usr/rapid/
+3. **cp \*.c bak** - Copy all C files in current directory to subdirectory bak
+4. **cp src /home/usr/rapid/** - Copy directory src to absolute path directory /home/usr/rapid/
+5. **cp -R dev bak** - Copy all files and directories in dev recursively to subdirectory bak
+6. **cp -f test.c bak** - Force file copy
+7. **cp -i test.c bak** - Interactive prompt before file overwrite
+8. **cp -u * bak** - Update all files in current directory - copy only newer files to destination directory bak
 ---
 ### mv command
 ---
