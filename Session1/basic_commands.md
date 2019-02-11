@@ -57,8 +57,151 @@ Some examples
 15. **ls -s** - print the allocated size of each file, in blocks
 16. **ls -t** - sort by modification time, newest first
 17. **ls -1** - list one file per line.
-### vi/nano command
+### vi command
 ---
+VI editor is the default file editor in most of the Linux/Nix machines. It is having great capabilities to edit a file with in few key strokes.<br/>
+Lets start with some general information and then move on to some good things what vi editor can do for you while editing a file.
+1. Vi stands for visual.
+2. Vi have it’s variants like vim which stands for Vi IMproved, VimX11 for gui and winvi for MS windows.
+3. Vi is the most popular editor and next most popular editor is gedit.
+4. Do you know there is a book on VI editor from orally which is of 600+ pages.
+5. Some other editors which will do the work of editing files are neno, pico, gedit, emacs, joe, nedit, ed etc.
+Learning vi editor and remembering them is a very a easy task if you learn it in a systematic way.
+* Modes of VI
+* Navigational commands
+* Editing commands.
+* Search and Replace
+* Save and quiting a file.
+#### Modes of VI :-
+Vi have two mode of operation.
+1. Command mode
+2. Inserting mode
+Command mode : <br/>
+Vi editor begins in command mode, where cursor movement(navigation in the file) and editing occur. To enter in to command mode from Inserting mode press esc button.<br/>
+Inserting mode : <br/>
+Used for entering text, this is similar to notepad in Windows. To enter in to inserting mode you can use any of the following.<br/>
+```
+i or I => present line
+o => one line down the present line
+O => one line above
+Note : All comments will work in command mode only.
+```
+#### Navigational commands :-
+1. Character navigation k, h, l and j
+```
+h => To move one character left.
+j => To move one line down.
+k => To move one line up.
+l => To move one character right.
+```
+How to use above commands in clever way?
+```
+Examples :
+6j => to move 6 lines down from the present courser.
+7k => to move 7 lines above from the present courser.
+```
+2. Word Navigation
+```
+w => word forward.
+e =>word forward, but end of the word.
+b => one word backward.
+```
+Examples :
+```
+32w => To move 32 words forward
+6b => To move 6 words back.
+```
+3. Setting numbering to lines
+```
+:set nu
+Removing of nummbering to lines
+:set nonu
+```
+4. Moving paragraphs
+```
+move one paragraph up => {{
+move one paragraph down => }}
+```
+5. Moving page up/down
+```
+For up => ctrl+b
+For down => ctrl+f
+```
+6. Moving start/end of the file
+```
+Starting of the file(first line => [[
+End of the file(last line) => ]]
+```
+7. Going to any line :
+```
+:lineno
+Example :
+If we want to go to 56 line then type
+:56
+```
+#### Editing commands :-
+8. Replace one letter
+```
+Replace one letter => r
+Delete one letter => x
+```
+9. Editing one word
+```
+Edit one word => cw
+Delete one word => dw
+```
+10. Editing one line
+```
+Editing a line from courser to the end of that line => d$
+```
+11. Cutting
+```
+deleting(cutting) one line => dd
+Examples :
+2dd(deleting/cutting two lines)
+```
+12. Pasting
+```
+Pasting a line below the courser => p
+Pasting a line above the courser => P
+```
+13. Coping
+```
+Copying one line => yy
+Copying n lines => nyy
+```
+14. Special commands
+```
+joining lines => J
+undoing things => u
+repeating the previous command => .
+```
+#### Search and replace :-
+15. Search for a term /term
+```
+Example : If you want to search for suresh then press /suresh enter
+/suresh
+Moving to next occurrence, press “n” without quotes moving to the previous occurrence, press “N” without quotes.
+```
+16. Searching and replacing a term(here separator is / )
+```
+:%s/searchterm/replaceterm/g
+change default separator
+:%s_/home/surya/grade_/home/testing/dest_g
+```
+17. To search and replace particular term from given line to other given line.
+```
+:%s294,304/sahana/xyz/g
+```
+#### Save and quiting a file :-
+```
+:w => save the file
+:q => quit the file
+:wq => save and quit
+:w! => force save the file
+:q! => force quit without save
+:wq => save and quit forcefully
+```
 ### cat command
 ---
 ### stat command
