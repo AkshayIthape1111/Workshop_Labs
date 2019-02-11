@@ -217,7 +217,7 @@ Some Examples:-
 9. **cat test >> test1** - Appends in existing file with ‘>>‘ (double greater than) symbol. Here, contents of test file will be appended at the end of test1 file.
 10. **cat < test2** - When you use the redirect with standard input ‘<‘ (less than symbol), it use file name test2 as a input for a command and output will be shown in a terminal.
 ---
-### stat command
+### 6. stat command
 ---
 stat command is a useful utility for viewing file or file system status. It retrieves information such as file type; access rights in octal and human-readable; SELinux security context string; time of file birth, last access, last data modification, last status change in both human-readable and in seconds since Epoch, and much more.<br/>
 It has an option to specify a custom format instead of the default, for displaying information.<br/>
@@ -232,7 +232,7 @@ Some Examples:-
    * %z – time of last status change, human-readable
 5. **stat -t /var/log/syslog** - The **-t** option can be used to print the information in terse form.
 ---
-### mkdir command
+### 7. mkdir command
 ---
 Short for "make directory", mkdir is used to create directories on a file system .<br/>
 ext4_mkdir() system call attempts to create a directory named pathname.<br/>
@@ -244,7 +244,7 @@ Some Examples :-
    * -v print a message for each created directory
 3. **mkdir -m a=rwx akki OR mkdir -m 777 akki** - Create the akki directory, and set its permissions such that all users may read, write, and execute the contents
 ---
-### cp command
+### 8. cp command
 ---
 cp  command is used for copy files and directories <br/>
 Some Examples :- 
@@ -257,7 +257,7 @@ Some Examples :-
 7. **cp -i test.c bak** - Interactive prompt before file overwrite
 8. **cp -u * bak** - Update all files in current directory - copy only newer files to destination directory bak
 ---
-### mv command
+### 9. mv command
 ---
 mv command is used to move files and directories.<br/>
 Some Examples:-
@@ -269,7 +269,7 @@ Some Examples:-
 6. **mv -u main.c bak** - Update - move when main.c is newer
 7. **mv -v main.c bak** - Move main.c and prompt before overwrite bak/main.c
 ---
-### rm command
+### 10. rm command
 ---
 rm stands for ‘remove‘ as the name suggests rm command is used to delete or remove files and directory in UNIX like operating system. If you are new to Linux then you should be very careful while running rm command because once you delete the files then you can not recover the contents of files and directory. Though there are some tools and commands through which deleted files can be recovered but for that you need expert skills.<br/>
 Some Examples:-
@@ -283,21 +283,21 @@ Some Examples:-
 8. **rm -f log{1..5}.txt** - Regular expression in rm command .
 9. **rm ./\ -store** - Delete a file which starts with hyphen symbol (-)
 ---
-### rmdir command
+### 11. rmdir command
 ---
 Short for "remove directory", rmdir is used to remove directories on a file system .<br/>
 ext4_rmdir() system call attempts to remove a directory using pathname.
 1. **rmdir akki** - It remove akki directory into your current directory if it is empty .
 2. **rmdir -vp** - Remove DIRECTORY and its ancestors; e.g., 'rmdir -p a/b/c' is similar to 'rmdir a/b/c a/b a'
 ---
-### file command
+### 12. file command
 ---
 The file command determines the file type of a file. It reports the file type in human readable format (e.g. ‘ASCII text’) or MIME type (e.g. ‘text/plain; charset=us-ascii’). As filenames in UNIX can be entirely independent of file type file can be a useful command to determine how to view or work with a file.<br/>
 Some Examples:-
 1. **file akki.txt** - To determine the file type of a file pass the name of a file to the file command.The file name along with the file type will be printed to standard output.
 2. **file -b akki.txt** - To show just the file type pass the -b option. 
 ---
-### head command
+### 13. head command
 ---
 The head command reads the first few lines of any text given to it as an input and writes them to standard output (which, by default, is the display screen). <br/>
 head, by default, prints the first 10 lines of each FILE to standard output. <br/>
@@ -313,7 +313,7 @@ Some Examples :-
 9. **head -n 4 \*.txt** - Display the first four lines of every file in the working directory whose file name ends in the extension .txt.
 10. **head -n 4 -q \*.txt** - Same as the previous command, but uses quiet (-q) output, which will not print a header before the lines of each file.
 ---
-### tail command
+### 14. tail command
 The tail command reads the final few lines of any text given to it as an input and writes them to standard output (which, by default, is the monitor screen). <br/>
 tail prints the last 10 lines of each FILE to standard <br/>
 Some Examples :- 
@@ -326,7 +326,7 @@ Some Examples :-
 7. **tail -c 6M myfile.txt** - Displays the last six megabytes.
 8. **tail -n 4 \*.txt** - Display the last four lines of every file in the working directory whose file name ends in the extension .txt.
 ---
-### history command
+### 15. history command
 ---
 We use history command frequently in our daily routine jobs to check history of command or to get info about command executed by user. <br/>
 we will see how we can use history command effectively to extract the command which was executed by users in Bash shell. This may be useful for audit purpose or to find out what command is executed at what date and time. <br/>
