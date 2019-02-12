@@ -99,3 +99,20 @@ The name of the user will be changed from LOGIN to NEW_LOGIN. Nothing else is ch
 * -a, --append<br/>
 Add the user to the supplementary group(s). Use only with the -G option.
 ## groupadd and groupmod command 
+The groupadd command creates a new group account using the values specified on the command line plus the default values from the system. The new group will be entered into the system files as needed.<br/>
+When we run ‘groupadd‘ command in Linux terminal, it performs following major things:
+1. It edits following files for the newly created User account .
+   * /etc/group
+   * /etc/gshadow 
+
+Some Examples :-
+1. **groupadd Redhat** - It create Redhat group in the system .
+2. **groupadd -f javaproject** - if you want to exit the command with success status, when the group exists, use -f or --force option.
+3. **groupadd -g 3456 systemd1** - The GID of the added group is decided by the system. But if you want to provide some specific GID, it can be provided with -g or --gid option.
+4. **groupadd -r systemd1** - The GIDs allotted to new groups are allocated between GID_MIN and GID_MAX values from login.defs file. Usually, the value of GID_MIN is 500 or 1000 in most systems. The GIDs below GID_MIN are reserved for system groups. If a system group is needed to be created, use -r option.
+5. **groupadd -o -g 505 redhat** - For allocating a non-unique GID to a group, -o option is used .
+6. **groupadd -K GID\_MIN=700 redhat** - The default values for login are defined in /etc/login.defs file. For overriding key-value pairs in this file, -K option is used.
+
+**In groupmod command 80% options are same like groupadd.**
+1. -n, --new-name NEW_GROUP<br/>
+The name of the group will be changed from GROUP to NEW_GROUP name.
