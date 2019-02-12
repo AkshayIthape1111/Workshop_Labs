@@ -88,3 +88,13 @@ Some examples :-
 17. **useradd -r system**
     * Create a system account.
     * System users will be created with no aging information in /etc/shadow, and their numeric identifiers are chosen in the SYS_UID_MIN-SYS_UID_MAX range, defined in /etc/login.defs, instead of UID_MIN-UID_MAX (and their GID counterparts for the creation of groups).Note that useradd will not create a home directory for such an user, regardless of the default setting in /etc/login.defs(CREATE_HOME). You have to specify the -m options if you want a home directory for a system account to be created.
+
+The system administrator is responsible for placing the default user files in the /etc/skel/ directory (or any other skeleton directory specified in /etc/default/useradd or on the command line).
+<br/>
+**In usermod command 80% options are same like useradd .**
+* -m, --move-home
+Move the content of the user's home directory to the new location.This option is only valid in combination with the -d (or --home)option.usermod will try to adapt the ownership of the files and to copythe modes, ACL and extended attributes, but manual changes might beneeded afterwards.
+* -l, --login NEW_LOGIN
+The name of the user will be changed from LOGIN to NEW_LOGIN. Nothing else is changed. In particular, the user's home directory or mail spool should probably be renamed manually to reflect the new login name.
+* -a, --append
+Add the user to the supplementary group(s). Use only with the -G option.
