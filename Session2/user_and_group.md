@@ -67,24 +67,24 @@ Some examples :-
 9. **useradd -e 2014-04-27 -f 45 Salu**
    * The ‘-f‘ argument is used to define the number of days after a password expires. A value of 0 inactive the user account as soon as the password has expired. By default, the password expiry value set to -1 means never expire.
 10. **useradd -c "Hero" Salu**
-   * The ‘-c‘ option allows you to add custom comments, such as user’s full name, phone number, etc to /etc/passwd file. The comment can be added as a single line without any spaces.
+    * The ‘-c‘ option allows you to add custom comments, such as user’s full name, phone number, etc to /etc/passwd file. The comment can be added as a single line without any spaces.
 11. **useradd -s /sbin/nologin Salu**
-   * we add users which has nothing to do with login shell or sometimes we require to assign different shells to our users. We can assign different login shells to a each user with ‘-s‘ option.
+    * we add users which has nothing to do with login shell or sometimes we require to assign different shells to our users. We can assign different login shells to a each user with ‘-s‘ option.
 12. **useradd -u Salu**
-   * ‘-U‘ argument create/adds a group with the same name as the user.
+    * ‘-U‘ argument create/adds a group with the same name as the user.
 13. **useradd -k Salu**
-   * we used ‘-k‘ option to set custom skeleton directory i.e. /etc/custom.skell, not the default one /etc/skel.
-   * The skeleton directory, which contains files and directories to be copied in the user's home directory, when the home directory is created by useradd.
-   * This option is only valid if the -m (or --create-home) option is specified.
+    * we used ‘-k‘ option to set custom skeleton directory i.e. /etc/custom.skell, not the default one /etc/skel.
+    * The skeleton directory, which contains files and directories to be copied in the user's home directory, when the home directory is created by useradd.
+    * This option is only valid if the -m (or --create-home) option is specified.
 14. **useradd -b Salu**
-   * The default base directory for the system
-   * If this option is not specified, useradd will use the base directory specified by the HOME variable in /etc/default/useradd, or /home by default.
+    * The default base directory for the system
+    * If this option is not specified, useradd will use the base directory specified by the HOME variable in /etc/default/useradd, or /home by default.
 15. **useradd -m Salu**
-   * Create the user's home directory if it does not exist. The files and directories contained in the skeleton directory (which can be defined with the -k option) will be copied to the home directory.
-   * By default, if this option is not specified and CREATE_HOME is not enabled, no home directories are created.
+    * Create the user's home directory if it does not exist. The files and directories contained in the skeleton directory (which can be defined with the -k option) will be copied to the home directory.
+    * By default, if this option is not specified and CREATE_HOME is not enabled, no home directories are created.
 16. **useradd -ou 1000 Salu**
-   * Allow the creation of a user account with a duplicate (non-unique)UID.
-   * This option is only valid in combination with the -u option.
+    * Allow the creation of a user account with a duplicate (non-unique)UID.
+    * This option is only valid in combination with the -u option.
 17. **useradd -r system**
-   * Create a system account.
-   * System users will be created with no aging information in /etc/shadow, and their numeric identifiers are chosen in the SYS_UID_MIN-SYS_UID_MAX range, defined in /etc/login.defs, instead of UID_MIN-UID_MAX (and their GID counterparts for the creation of groups).Note that useradd will not create a home directory for such an user, regardless of the default setting in /etc/login.defs(CREATE_HOME). You have to specify the -m options if you want a home directory for a system account to be created.
+    * Create a system account.
+    * System users will be created with no aging information in /etc/shadow, and their numeric identifiers are chosen in the SYS_UID_MIN-SYS_UID_MAX range, defined in /etc/login.defs, instead of UID_MIN-UID_MAX (and their GID counterparts for the creation of groups).Note that useradd will not create a home directory for such an user, regardless of the default setting in /etc/login.defs(CREATE_HOME). You have to specify the -m options if you want a home directory for a system account to be created.
