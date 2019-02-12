@@ -116,3 +116,31 @@ Some Examples :-
 **In groupmod command 80% options are same like groupadd.**
 1. -n, --new-name NEW_GROUP<br/>
 The name of the group will be changed from GROUP to NEW_GROUP name.
+## userdel command
+The userdel command modifies the system account files, deleting all entries that refer to login. The named user must exist.
+<br/>
+Some Examples:-
+1. **userdel Salu** - To remove the user Salu account from the local system / server / workstation but it not delete it home directory .
+2. **userdel -r Salu** - 
+    * Files in the user's home directory will be removed along with the home directory itself and the user's mail spool. Files located in other file systems will have to be searched for and deleted manually.
+    * The mail spool is defined by the MAIL_DIR variable in the login.defs file.
+3. **userdel -f Salu**
+    * This option forces the removal of the user account, even if the user is still logged in. It also forces userdel to remove the user's home directory and mail spool, even if another user uses the same home directory or if the mail spool is not owned by the specified user. If USERGROUPS_ENAB is defined to yes in /etc/login.defs and if a group exists with the same name as the deleted user, then this group will be removed, even if it is still the primary group of another user.
+
+**Note: This option is dangerous and may leave your system in an inconsistent state.**
+
+## groupdel command
+The groupdel command modifies the system account files, deleting all entries that refer to GROUP. The named group must exist.
+<br/>
+Some Examples:-
+1. **groupdel Salu** - To remove the group Redhat from the local system / server / workstation .
+
+You may not remove the primary group of any existing user. You must remove the user before you remove the group.You should manually check all file systems to ensure that no files remain owned by this group.
+<br/>
+The groupdel command exits with the following values:
+* 0 : - success
+* 2 :- invalid command syntax
+* 6 :- specified group doesn't exist
+* 8 :- can't remove user's primary group
+* 10 :- can't update group file
+
