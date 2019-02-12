@@ -16,4 +16,16 @@ Linux group is a mechanism to organise a collection of users. Like the user ID, 
 2. A supplementary group
 
 Each user is a member of a primary group and of zero or ‘more than zero’ supplementary groups. <br/>
-The group information is stored in **/etc/group** and the respective passwords are stored in the **/etc/gshadow** file. 
+The group information is stored in **/etc/group** and the respective passwords are stored in the **/etc/gshadow** file.
+## id command 
+Print user and group information for the specified USERNAME or for the current user.<br/>
+On its own the id command prints a lot of information:
+* user id
+* username
+* group id
+* group name
+* id of other groups
+* names of other groups
+```
+id
+```
