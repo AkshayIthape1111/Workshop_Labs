@@ -93,8 +93,12 @@ The system administrator is responsible for placing the default user files in th
 <br/>
 **In usermod command 80% options are same like useradd .**
 * -m, --move-home
+<br/>
 Move the content of the user's home directory to the new location.This option is only valid in combination with the -d (or --home)option.usermod will try to adapt the ownership of the files and to copythe modes, ACL and extended attributes, but manual changes might beneeded afterwards.
 * -l, --login NEW_LOGIN
+<br/>
 The name of the user will be changed from LOGIN to NEW_LOGIN. Nothing else is changed. In particular, the user's home directory or mail spool should probably be renamed manually to reflect the new login name.
 * -a, --append
+<br/>
 Add the user to the supplementary group(s). Use only with the -G option.
+## groupadd and groupmod command 
