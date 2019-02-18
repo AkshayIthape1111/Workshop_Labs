@@ -69,10 +69,10 @@ ls -ld /
 ls -ltr  
 ```
 Some Task for you 
-1.See the content of / directory 
-2.See all files of / directory
-3.See the output in long listing format
-4.I just want to see last modify directory
+1. See the content of / directory 
+2. See all files of / directory
+3. See the output in long listing format
+4. I just want to see last modify directory
 ---
 ### vi command
 ---
