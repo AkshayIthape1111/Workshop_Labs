@@ -140,6 +140,7 @@ Some Examples :-
    * -p no error if existing, make parent directories as needed
    * -v print a message for each created directory
 3. **mkdir -m a=rwx akki OR mkdir -m 777 akki** - Create the akki directory, and set its permissions such that all users may read, write, and execute the contents
+
 Some Task for you
 1. Create directory 'pune/sinhgad' in / directory 
 ---
@@ -155,9 +156,10 @@ Some Examples :-
 6. **cp -f test.c bak** - Force file copy
 7. **cp -i test.c bak** - Interactive prompt before file overwrite
 8. **cp -u * bak** - Update all files in current directory - copy only newer files to destination directory bak
+
 Some Task for you 
-1.Copy file sinhgadpune.txt to '/pune/sinhgad' directory
-2.Copy all contents of '/var/log' directory to '/pune/sinhgad' directory 
+1. Copy file sinhgadpune.txt to '/pune/sinhgad' directory
+2. Copy all contents of '/var/log' directory to '/pune/sinhgad' directory 
 ---
 ### 9. mv command
 ---
@@ -170,6 +172,7 @@ Some Examples:-
 5. **mv bak bak2** - Rename directory bak to bak2
 6. **mv -u main.c bak** - Update - move when main.c is newer
 7. **mv -v main.c bak** - Move main.c and prompt before overwrite bak/main.c
+
 Some Task for you 
 1. Move all the contents of '/pune/sinhgad' directory to '/tmp' directory.
 ---
@@ -186,6 +189,7 @@ Some Examples:-
 7. **rm -I linux_store/app\*** - Prompt once before deleting more than three files or recursive delete.
 8. **rm -f log{1..5}.txt** - Regular expression in rm command .
 9. **rm ./\ -store** - Delete a file which starts with hyphen symbol (-)
+
 Some Task for you 
 1. Remove all the contents of '/tmp' directory 
 ---
@@ -195,6 +199,7 @@ Short for "remove directory", rmdir is used to remove directories on a file syst
 ext4_rmdir() system call attempts to remove a directory using pathname.
 1. **rmdir akki** - It remove akki directory into your current directory if it is empty .
 2. **rmdir -vp** - Remove DIRECTORY and its ancestors; e.g., 'rmdir -p a/b/c' is similar to 'rmdir a/b/c a/b a'
+
 Some Task for you 
 1. Remove the directory '/pune/sinhgad'
 ---
@@ -211,6 +216,7 @@ Some Examples:-
 6. **history | grep httpd** - Piping History
 7. **history -w** - Write To History File 
 8. **history -c** - Clear History File
+
 Some Task for you
 1. Save the history to file 'history.txt' 
 2. Clear the history 
