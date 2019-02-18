@@ -52,6 +52,11 @@ exit
 ================================
 ```
 Lab-3(user1.txt is should be read and write by user 'user2')
-<br/>
+```
+do it yourself
+```
 Lab-4(user 'user1' should be able to go to the directory 'user2/hello' and he should be able to create directory on that directory)
+```
+do it yourself
+```
 ---
