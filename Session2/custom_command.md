@@ -20,7 +20,7 @@ Rename that file name a.out to love
 ```
 mv a.out love
 ```
-## Stepp 2 :-
+## Step 2 :-
 Put that particular 'love' binary file to the proper location so that execute as a command
 ```
 cp love /usr/bin
