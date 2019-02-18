@@ -78,3 +78,15 @@ mkdir king1
 ll
 ```
 ---
+## Change the Owner of the file 
+Lab-1(Change the owner of the file 'user1.txt' to user 'user2')
+```
+su - user1
+chown user2:user2 user1.txt
+ll user1.txt
+```
+Lab-2(change the owner of the directory 'user2/hello' to user 'user1')
+```
+do it yourself
+```
+---
