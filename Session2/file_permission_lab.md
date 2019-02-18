@@ -60,3 +60,21 @@ Lab-4(user 'user1' should be able to go to the directory 'user2/hello' and he sh
 do it yourself
 ```
 ---
+## Change the default permission 
+---
+Lab-1
+```
+touch akki
+mkdir akki1
+ll 
+umask
+```
+Lab-2
+```
+umask 0007
+umask
+touch king
+mkdir king1
+ll
+```
+---
