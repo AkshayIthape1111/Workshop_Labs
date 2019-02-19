@@ -52,4 +52,11 @@ kill %job-number
 kill %3
 ```
 ---
-## Process Management
+## View Active Processes in Linux
+---
+#### ps command
+It displays information about a selection of the active processes on the system
+```
+ps
+ps -e | head
+```
