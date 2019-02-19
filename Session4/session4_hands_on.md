@@ -27,12 +27,12 @@ apt install mariadb-server
 ```
 ### Step 5 - Setup Directory For Wordpress Project
 ```
-mkdir /var/www/html/local.wordpress.com/
+mkdir /var/www/html/workshop1.linuxgeek.in/
 wget https://wordpress.org/latest.tar.gz
 tar -xzvf latest.tar.gz
-cp wordpress/. /var/www/html/local.wordpress.com/ -R
-cp /var/www/html/local.wordpress.com/wp-config-sample.php /var/www/html/local.wordpress.com/wp-config.php
-chown ubuntu:www-data /var/www/html/local.wordpress.com/
+cp wordpress/. /var/www/html/workshop1.linuxgeek.in/ -R
+cp /var/www/html/workshop1.linuxgeek.in/wp-config-sample.php /var/www/html/workshop1.linuxgeek.in/wp-config.php
+chown ubuntu:www-data /var/www/html/workshop1.linuxgeek.in/
 ```
 ### Step 6 - Create The Database In Mysql For Our Project
 ```
@@ -42,7 +42,7 @@ exit
 ```
 ### Step 8 - Configure The Wp-config File 
 ```
-cd /var/www/html/local.wordpress.com/
+cd /var/www/html/workshop1.linuxgeek.in/
 vi wp-config.php
     database='wordpress'
     username='root'
@@ -50,13 +50,13 @@ vi wp-config.php
 ```
 ### Step 9 - Write The Virtual Host File 
 ```
-vi /etc/apache2/sites-available/local.wordpress.com.conf
+vi /etc/apache2/sites-available/workshop1.linuxgeek.in.conf
 
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
-    ServerName local.wordpress.com
-    DocumentRoot /var/www/html/local.wordpress.com
-   <Directory /var/www/html/local.wordpress.com>
+    ServerName workshop1.linuxgeek.in
+    DocumentRoot /var/www/html/workshop1.linuxgeek.in
+   <Directory /var/www/html/workshop1.linuxgeek.in>
         Options Indexes FollowSymLinks MultiViews
         AllowOverride All
     </Directory>
@@ -74,13 +74,13 @@ vi /etc/hosts
 
 add following line 
 
-127.0.0.1	local.wordpress.com
+127.0.0.1	workshop1.linuxgeek.in
 
 :wq
 ```
 ### Step 11 - Open The Browser And Type Your URL 
 ```
-http://local.wordpress.com
+http://workshop1.linuxgeek.in
 ```
 ### Step 12 - Setup Wordpress 
 ### Step 13 - Congratulations You Done It
