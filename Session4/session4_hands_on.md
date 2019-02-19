@@ -87,3 +87,15 @@ http://workshop1.linuxgeek.in
 ```
 ### Step 12 - Setup Wordpress 
 ### Step 13 - Congratulations You Done It
+### Step 14 - Domain Pointing
+### Step 15 - SSL Certification Installation 
+```
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install certbot python-certbot-apache 
+```
+### Step 16 - Genrate The Certification For Our Domain
+```
+sudo certbot --apache
+```
