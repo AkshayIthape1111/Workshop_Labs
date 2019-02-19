@@ -99,3 +99,16 @@ sudo apt-get install certbot python-certbot-apache
 ```
 sudo certbot --apache
 ```
+
+### Step 17 - Change the Apache Setting 
+```
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName workshop1.linuxgeek.in
+    DocumentRoot /var/www/html/workshop1.linuxgeek.in
+    Redirect / https://workshop1.linuxgeek.in
+    ErrorLog ${APACHE_LOG_DIR}/wordpress-error.log
+    CustomLog ${APACHE_LOG_DIR}/wordpress-access.log combined
+
+</VirtualHost>
+```
