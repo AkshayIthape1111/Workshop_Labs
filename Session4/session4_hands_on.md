@@ -2,7 +2,7 @@
 
 ### Step 1 - System Update And Upgrade
 ```
-sudo -Es
+sudo -s
 apt update
 apt upgrade
 ```
