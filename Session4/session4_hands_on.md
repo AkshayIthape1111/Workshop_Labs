@@ -37,7 +37,7 @@ chown ubuntu:www-data /var/www/html/workshop1.linuxgeek.in/
 ### Step 6 - Create The Database In Mysql For Our Project
 ```
 mysql -uroot -p
-create databases wordpress;
+create database wordpress;
 exit
 ```
 ### Step 8 - Configure The Wp-config File 
@@ -67,6 +67,9 @@ vi /etc/apache2/sites-available/workshop1.linuxgeek.in.conf
 </VirtualHost>
 
 :wq
+
+a2ensite workshop1.linuxgeek.in.conf
+systemctl restart apache2
 ```
 ### Step 10 - Add The Entry In /etc/hosts file 
 ```
