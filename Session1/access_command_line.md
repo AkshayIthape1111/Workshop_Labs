@@ -5,6 +5,10 @@ A commandline is a text based interface which can be used to input instruction t
 echo "hello"
 echo $SHELL
 ```
+How to see the environment variables
+```
+printenv
+```
 When the shell is used interactively,it displays a string when it is waiting for a command from the user.This is called **shell prompt**.<br/>
 When the regular user starts a shell,the default prompt ends with a **$** character.
 ```
