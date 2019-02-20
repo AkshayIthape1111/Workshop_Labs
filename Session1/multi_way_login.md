@@ -4,6 +4,11 @@
 ## Virtual Console Login
 * Ctrl+Alt+F1 to F7 any key
 * F7 is for graphical console 
+* Press CTRL+ALT+F1 
+* Do login with root
+* Press CTRL+ALT+F3
+* Do login with root
+* Enter command 'startx'
 ## Remote Login
 * ssh :- <br/>
   The SSH protocol (also referred to as Secure Shell) is a method for secure remote login from one computer to another.
